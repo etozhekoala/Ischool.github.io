@@ -7,10 +7,26 @@
   <title>Тестовое задание | Мороз А.А.</title>
   <link rel="stylesheet" href="./vendor/fonts/fonts.css">
   <link rel="stylesheet" href="./pages/index.css">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(93223281, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93223281" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body class="_customer-page">
   <main class="_customer-main">
-    <section class="_customer-intro">
+    <section class="_customer-intro" aria-label="Введение">
       <div class="_customer-intro__frame">
         <p class="_customer-intro__description">
           <span class="_customer-intro__title">
@@ -37,7 +53,9 @@
           </div>
           <div class="_customer-services__item-text-container">
           <h3 class="_customer-services__item-title">
-            Монтаж
+            <a href="#_customer-prices_anchor" class="_customer-services__item-title_type_link">
+              Монтаж
+            </a>
           </h3>
           <p class="_customer-services__item-text">
             Все работы ведутся согласно разработанным типовым технологическим решениям. При выполнении 
@@ -113,7 +131,7 @@
         </li>
       </ul>
     </section>
-    <section class="_customer-feedback">
+    <section class="_customer-feedback" aria-label="Узнайте стоимость монтажа и демонтажа холодильных камер">
       <div class="_customer-call__feedback-frame">
         <div class="_customer-call__ellips-img _customer-call__ellips-img_first"></div>
         <div class="_customer-call__ellips-img _customer-call__ellips-img_second"></div>
@@ -127,30 +145,37 @@
           <div class="_customer-call__buttons">
             <button 
               type="button"
-              class="_customer-button _customer-button_type_get">
+              class="_customer-button _customer-button_type_get _customer-call__button_open-form">
               Отправить заявку
             </button>
-            <button
-              type="button"
-              class="_customer-button _customer-button_type_call">
+            <a 
+              href="tel:+79999999999"
+              class="_customer-button-call"
+              onclick="ym(93223281, 'reachGoal', 'test-target'); return true;" value="Заказать звонок" >
               Заказать звонок
-            </button>
+            </a>
           </div>
-        <img src="./image/banner_photo.png" class="_customer-call__image">
+        <img 
+          alt="Монтаж и демонтаж холодильных камер"
+          src="./image/banner_photo.png" 
+          class="_customer-call__image">
       </div>
     </section>
-    <section class="_customer-prices">
+    <section class="_customer-prices" id="_customer-prices_anchor">
       <h2 class="_customer-prices__title">
         Цены на монтаж холодильных камер
       </h2>
       <ul class="_customer-prices__cards">
         <li class="_customer-prices__cards-item">
-          <div class="_customer-prices__image">
+          <a 
+            target="_blank"
+            href="/catalog" 
+            class="_customer-prices__image">
             <img
               alt="Камеры малого размера"
               src="./image/refreszh_1.png"
               class="_customer-prices__img">
-          </div>
+          </a>
           <p class="_customer-prices__card-title">
             Камеры малого размера
           </p>
@@ -170,20 +195,24 @@
             </p>
           </div>
           <div class="_customer-prices__button">
-            <button
-              type="button"
-              class="_customer-button _customer-button_type_get _customer-button_type_card-hover">
+            <a
+              target="_blank"
+              href="/catalog"
+              class="_customer-button _customer-button_type_get _customer-button_type_card-hover _customer-button_type_link">
               Заказать монтаж
-            </button>
+            </a>
           </div>
         </li>
         <li class="_customer-prices__cards-item">
-          <div class="_customer-prices__image">
+          <a 
+            target="_blank"
+            href="/catalog"
+            class="_customer-prices__image">
             <img
               alt="Камеры среднего размера"
               src="./image/refreszh_2.png"
               class="_customer-prices__img">
-          </div>
+          </a>
           <p class="_customer-prices__card-title">
             Камеры среднего размера
           </p>
@@ -203,20 +232,24 @@
             </p>
           </div>
           <div class="_customer-prices__button">
-            <button
-              type="button"
-              class="_customer-button _customer-button_type_get _customer-button_type_card-hover">
+            <a
+              target="_blank"
+              href="/catalog"
+              class="_customer-button _customer-button_type_get _customer-button_type_card-hover _customer-button_type_link">
               Заказать монтаж
-            </button>
+            </a>
           </div>
         </li>
         <li class="_customer-prices__cards-item">
-          <div class="_customer-prices__image">
+          <a 
+            target="_blank"
+            href="/catalog"  
+            class="_customer-prices__image">
             <img
               alt="Камеры большого размера"
               src="./image/refreszh_3.png"
               class="_customer-prices__img">
-          </div>
+          </a>
           <p class="_customer-prices__card-title">
             Камеры большого размера
           </p>
@@ -236,20 +269,24 @@
             </p>
           </div>
           <div class="_customer-prices__button">
-            <button
-              type="button"
-              class="_customer-button _customer-button_type_get _customer-button_type_card-hover">
+            <a
+              target="_blank"
+              href="/catalog"
+              class="_customer-button _customer-button_type_get _customer-button_type_card-hover _customer-button_type_link">
               Заказать монтаж
-            </button>
+            </a>
           </div>
         </li>
         <li class="_customer-prices__cards-item">
-          <div class="_customer-prices__image">
+          <a
+            target="_blank" 
+            href="/catalog" 
+            class="_customer-prices__image">
             <img
               alt="Нестандартные размеры"
               src="./image/refreszh_4.png"
               class="_customer-prices__img">
-          </div>
+          </a>
           <p class="_customer-prices__card-title">
             Нестандартные размеры
           </p>
@@ -269,11 +306,12 @@
             </p>
           </div>
           <div class="_customer-prices__button">
-            <button
-              type="button"
-              class="_customer-button _customer-button_type_get _customer-button_type_card-hover">
+            <a
+              target="_blank"
+              href="/catalog"
+              class="_customer-button _customer-button_type_get _customer-button_type_card-hover _customer-button_type_link">
               Заказать монтаж
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -419,54 +457,6 @@
                       </p>
                 </div>
               </div>
-              <div class="_customer-reviews__slider-slide">
-                <div class="_customer-reviews__slide-item">
-                  <img
-                    alt="Мересьев Игорь Иванович"
-                    src="./image/photo_meresev.png"
-                    class="_customer-reviews__slide-photo">
-                    <h3 class="_customer-reviews__slide-name">
-                      Мересьев Игорь Иванович
-                    </h3>
-                    <p class="_customer-reviews__slide-text">
-                      Партнерам своей компании я уже не раз рекомендовал компанию ГК Айскул Групп». Потому что 
-                      качество продукции достойное, сервис отличный, есть обслуживание, работа по договору, 
-                      гарантии и т. д. Что касается... 
-                    </p>
-                </div>
-              </div>
-              <div class="_customer-reviews__slider-slide">
-                <div class="_customer-reviews__slide-item">
-                  <img
-                    alt="Мересьев Игорь Иванович"
-                    src="./image/photo_meresev.png"
-                    class="_customer-reviews__slide-photo">
-                    <h3 class="_customer-reviews__slide-name">
-                      Мересьев Игорь Иванович
-                    </h3>
-                    <p class="_customer-reviews__slide-text">
-                      Партнерам своей компании я уже не раз рекомендовал компанию ГК Айскул Групп». Потому что 
-                      качество продукции достойное, сервис отличный, есть обслуживание, работа по договору, 
-                      гарантии и т. д. Что касается... 
-                    </p>
-                </div>
-              </div>
-              <div class="_customer-reviews__slider-slide">
-                <div class="_customer-reviews__slide-item">
-                  <img
-                    alt="Мересьев Игорь Иванович"
-                    src="./image/photo_meresev.png"
-                    class="_customer-reviews__slide-photo">
-                    <h3 class="_customer-reviews__slide-name">
-                      Мересьев Игорь Иванович
-                    </h3>
-                    <p class="_customer-reviews__slide-text">
-                      Партнерам своей компании я уже не раз рекомендовал компанию ГК Айскул Групп». Потому что 
-                      качество продукции достойное, сервис отличный, есть обслуживание, работа по договору, 
-                      гарантии и т. д. Что касается... 
-                    </p>
-                </div>
-              </div>
             </div>
           </div >
             <div class="_customer-buttons__slide-button _customer-buttons__slide-button_type_left _customer-reviews__button-prev"></div>
@@ -482,60 +472,35 @@
               <div class="_customer-clients__slider-wrapper">
                 <div class="_customer-clients__slider-slide">
                   <img 
+                    title="Ашан"
                     alt="логотип Ашан"
                     src="./image/ashan.png"
                     class="_customer-clients__image">
                 </div>
                 <div class="_customer-clients__slider-slide">
                   <img 
+                    title="Coca Cola"
                     alt="логотип CocaCola"
                     src="./image/cocacola.png"
                     class="_customer-clients__image">
                 </div>
                 <div class="_customer-clients__slider-slide">
                   <img 
+                    title="mcDonald's"
                     alt="логотип mcDonalds"
                     src="./image/mcdonalds.png"
                     class="_customer-clients__image">
                 </div>
                 <div class="_customer-clients__slider-slide">
                   <img 
+                    title="Додо пицца"
                     alt="логотип Додо Пицца"
                     src="./image/dodo.png"
                     class="_customer-clients__image">
                 </div>
                 <div class="_customer-clients__slider-slide">
                   <img 
-                    alt="логотип Дикси"
-                    src="./image/diksi.png"
-                    class="_customer-clients__image">
-                </div>
-                <div class="_customer-clients__slider-slide">
-                  <img 
-                    alt="логотип Ашан"
-                    src="./image/ashan.png"
-                    class="_customer-clients__image">
-                </div>
-                <div class="_customer-clients__slider-slide">
-                  <img 
-                    alt="логотип CocaCola"
-                    src="./image/cocacola.png"
-                    class="_customer-clients__image">
-                </div>
-                <div class="_customer-clients__slider-slide">
-                  <img 
-                    alt="логотип mcDonalds"
-                    src="./image/mcdonalds.png"
-                    class="_customer-clients__image">
-                </div>
-                <div class="_customer-clients__slider-slide">
-                  <img 
-                    alt="логотип Додо Пицца"
-                    src="./image/dodo.png"
-                    class="_customer-clients__image">
-                </div>
-                <div class="_customer-clients__slider-slide">
-                  <img 
+                    title="Дикси"
                     alt="логотип Дикси"
                     src="./image/diksi.png"
                     class="_customer-clients__image">
@@ -547,6 +512,46 @@
           </div>
         </section>
   </main>
+  <section 
+    aria-label="Форма обратной связи"
+    class="_customer-popup">
+    <div class="_customer-popup__popup-container">
+      <button 
+        type="button"
+        class="_customer-popup__button-close"></button>
+      <form 
+        name="popup-form"
+        class="_customer-popup__form">
+        <fieldset class="_customer-popup__fieldset">
+          <input
+            type="text"
+            name="name"
+            placeholder="Имя"
+            class="_customer-popup__input _customer-popup__input-name"
+            required>
+          <input
+            type="number"
+            name="number"
+            placeholder="Телефон"
+            class="_customer-popup__input _customer-popup__input-number-phone"
+            required>
+          <input
+            type="email"
+            name="email"
+            placeholder="Почта"
+            class="_customer-popup__input _customer-popup__input-email"
+            required>
+          <textarea class="_customer-popup__comment" name="comment" rows="5" placeholder="Комментарий"></textarea>
+        </fieldset>
+        <button 
+          type="submit"
+          class="_customer-button _customer-button_type_get _customer-popup__button-submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </section>
+  <script src="./scripts/popup.js"></script>
   <script src="./vendor/swiper.js"></script>
   <script src="./scripts/sliders.js"></script>
 </body>
