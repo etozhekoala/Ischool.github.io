@@ -1219,4 +1219,8 @@
     max-width: 282px;
   }
 
+  ._customer-popup__button-close {
+    right: 0;
+  }
+
 }
